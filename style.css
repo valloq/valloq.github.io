@@ -1,0 +1,21 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151515;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.container {
+  margin: 16px 16px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    margin: 3em 16%;
+  }
+}
