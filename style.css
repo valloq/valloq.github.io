@@ -19,6 +19,14 @@ h2 {
   margin: 32px 0 16px;
 }
 
+a:link {
+  color: #1585D7;
+}
+
+a:hover {
+  color: #04538D;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
