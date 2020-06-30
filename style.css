@@ -1,21 +1,164 @@
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #151515;
+  color: #2D3748;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 110%;
   margin-top: 0;
 }
 
-.container {
-  margin: 16px 16px;
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 110%;
+  margin: 32px 0 16px;
 }
 
-@media (min-width: 640px) {
-  .container {
-    margin: 3em 16%;
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+figure {
+  margin: 2em 0;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 32px;
+  background: #fff;
+  z-index: 1;
+  box-shadow: 0 1px 1px hsla(0,0%,0%,.2);
+}
+
+nav .home {
+  font-weight: 500;
+  margin: 0;
+}
+
+nav .home a {
+  text-decoration: none;
+  color: #2D3748;
+}
+
+.home h1 {
+  margin: 128px 0 64px;
+}
+
+@media (max-width: 640px) {
+  .home h1 {
+    margin: 1em 0 .5em;
   }
+}
+
+.connect h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.connect ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  .connect ul li {
+    margin-bottom: .5rem;
+  }
+
+.home .work {
+  margin-top: 32px;
+}
+
+.home .work h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.home .work ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #718096;
+}
+
+.home .work ul li {
+  font-size: 24px;
+  line-height: 110%;
+  border-bottom: 1px solid #718096;
+}
+
+.home .work ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 32px 0;
+}
+
+body.work {
+  padding-top: 128px;
+}
+
+@media (max-width: 640px) {
+  body.work {
+    padding-top: 5em;
+  }
+}
+
+body.work h1 {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  body.work h1 {
+    font-size: 36px;
+  }
+}
+
+.client {
+  font-size: 24px;
+  font-weight: normal;
+  color: #718096;
+  margin: 0 0 32px;
+}
+
+@media (max-width: 640px) {
+  .client {
+    margin-top: .5em;
+  }
+}
+
+.role {
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.back {
+  margin-top: 2em;
+  border-top: 1px solid #718096;
+}
+
+.back a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 0;
 }

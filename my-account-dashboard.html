@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My Account Dashboard | Eric Lim</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="simple-grid.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="work">
+  <nav>
+    <p class="home"><a href="/">Eric Lim</a></p>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <h1>My Account Dashboard</h1>
+        <h2 class="client">Glidewell Dental</h2>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h3 class="role">Role</h3>
+        <p>I worked with the scrum development team, product owner, and VP of operations. I was responsible for the research, design, and metrics.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-7">
+        <h2>Background</h2>
+        <p>Glidewell Dental’s primary business is in creating and delivering dental crowns (caps for teeth that are designed to restore their original size and shape) to be permanently placed in a patient’s mouth by their dentist. Because Glidewell is not directly applying the crowns to the patient, it can be difficult to acquire knowledge of how our products are meeting expectations.</p>
+        <p>The process of a dentist requesting and receiving a crown from Glidewell is referred to as a case. To gather the required feedback from our cases, an evaluation slip is included in every case that goes to the dentist. On average Glidewell will receive 3,500 evaluations in the mail every week. We then use the feedback provided on the evaluations to go back and improve our processes wherever there may be shortcomings, all in an effort to be the best partner to our customers. This cycle of consistently gathering feedback keeps us empathetic to the dentists’ needs as they build a business of their own.</p>
+        <h2>Identifying the problem and goal</h2>
+        <p>In an effort to reduce the handling and processing costs of paper evaluation slips, and also to make it easier for dentists to submit evaluations, a feature in the customer portal (My Account) was created to allow customers to submit their evaluations online. However, despite being available for months the feature was not receiving as much usage as expected.</p>
+        <p>Since the launch of the feature, case evaluations were received through My Account at an average of around 17 evaluations per week. This was a stark contrast to the average of 3,500 evaluations being received in the mail every week.</p>
+        <p>To be fair, not all of Glidewell’s customers use the customer portal. Most of the activity in the portal is around requesting a carrier to pick up a case, checking on case statuses (tracking numbers), and paying the monthly bill. The expectation was not that the website would receive all 3,500 evaluations immediately when the feature released.</p>
+        <p>After looking at usage numbers of the portal, we came to a target number of 93 evaluations a week. The target was enough for us to define success and recognize that there was room for improvement.</p>
+
+        <h2>Where do we start?</h2>
+        <p>The stakeholders initially asked for a banner to be added to the top of the page as a quick and simple way to draw attention to the feature. Working with the scrum development team, we recognized that this was only going to be a quick and temporary fix to a larger problem.</p>
+        <p>When looking at the dashboard, the very first page users would see upon signing into the portal, we saw other issues in play. We reviewed recordings of users navigating the page and also took a look at a heatmap to identify some prominent issues:</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <figure>
+          <img src="images/my-account-dashboard/before.png" alt="Dashboard before redesign" width="100%" />
+          <figcaption>The dashboard before the redesign</figcaption>
+        </figure>
+        <figure>
+          <img src="images/my-account-dashboard/heatmap.jpg" alt="Heatmap of the dashboard" width="100%" />
+          <figcaption>Heatmap showing where users were interacting on the dashboard</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <ul>
+          <li><strong>Discoverability</strong>: It is not immediately obvious how to submit a case evaluation on the dashboard. There were no indicators on the page to let users know that this was even a feature that was available. To get to the case evaluations, users would have to view a case that had already been delivered, and there was very little value in looking at delivered cases for the user.</li>
+          <li><strong>Information hierarchy</strong>: Information around billing was far too prominent. This was placed in the top left area after a quantitative survey came back saying that customers requested billing features the most. However, with more data (and experience) we realized that something a user wants to use does not necessarily mean they want to use it often. In this case, most of our customers only pay or view their bills once a month when it is due. We really wanted to de-emphasize the billing section and not have it to be the first thing they see when they sign in.</li>
+          <li><strong>Providing relevant information</strong>: The case list was one of the most viewed pages, but the information provided on the dashboard was rather meaningless. Customers just wanted to know where their cases were and when they would arrive - any other information was secondary.</li>
+        </ul>
+        <p>Watching users navigate the website, we also noticed that most of them would sign in and navigate to their destination page without looking at the dashboard. That just further solidified that we were missing a big opportunity.</p>
+
+        <h2>Design Quickly</h2>
+        <p>With the information in hand and a clearly defined problem, I set about designing concepts for a better dashboard and came up with some exploratory iterations. A couple of key decisions I made were to make it easy to highlight new features and to define announcement banners that could be used to highlight important information.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <figure>
+        <img src="images/my-account-dashboard/Concept-1@2x.png" alt="Dashboard before redesign" width="100%" />
+      </figure>
+    </div>
+    <div class="col-4">
+      <figure>
+        <img src="images/my-account-dashboard/Concept-2@2x.png" alt="Dashboard before redesign" width="100%" />
+      </figure>
+    </div>
+    <div class="col-4">
+      <figure>
+        <img src="images/my-account-dashboard/Concept-3@2x.png" alt="Dashboard before redesign" width="100%" />
+      </figure>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <p>After a couple of rounds of internal design critiques with the design team and scrum development team, I moved forward with one of the concepts that resonated well with the team. We conducted internal usability tests and made further adjustments, arriving at a final design that went into development.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <figure>
+        <img src="images/my-account-dashboard/Concept-4@2x.png" alt="Dashboard before redesign" width="100%" />
+        <figcaption>The call to action area below the navigation was considered to be too visually similar to a banner</figcaption>
+      </figure>
+    </div>
+    <div class="col-6">
+      <figure>
+        <img src="images/my-account-dashboard/Concept-5@2x.png" alt="Dashboard before redesign" width="100%" />
+        <figcaption>Final design that went into production</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <h2>Outcomes</h2>
+        <p>After a few months of the new dashboard being in production, we took a look at the case evaluation numbers. The site was now receiving around 56 case evaluations a week. Not quite our goal of 93, but a 335% increase from the 16 evaluations/week the old dashboard was receiving.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <figure>
+          <img src="images/my-account-dashboard/chart@2x.png" alt="Chart showing increase in case evaluations" width="100%" />
+          <figcaption>The redesigned dashboard was released in August of 2018</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-7">
+
+        <p>We also took the opportunity to ask some of our users what they thought of the redesigned dashboard with a survey - more for our own curiosity. Out of a total of 341 respondents, 90% said they loved it and 10% said they hated it.</p>
+
+        <h3>Positive</h3>
+        <ul>
+          <li>I like it. It looks clean and organized.</li>
+            <li>
+              Easier way to see and manage cases.
+            </li>
+            <li>
+              Clear and informative.
+            </li>
+            <li>
+              I can find everything I need.
+            </li>
+            <li>
+              Love it!!!! 
+            </li>
+            <li>
+              Awesome Sauce Look!
+            </li>
+            <li>
+              Dashboard immediately displays the information I need - no need to search👍
+            </li>
+        </ul>
+
+        <h3>Negative</h3>
+        <ul>
+          <li>Easier to see the old way.</li>
+          <li>Too much going on here.</li>
+          <li>There is to much going on. It would be simple. It looks to animated and can be a little overwhelming.</li>
+          <li>It sucks.</li>
+          <li>Stinks.</li>
+          <li>frig u</li>
+        </ul>
+
+        <p>Leveraging a simple request to add a banner to the portal into a dashboard redesign allowed me to demonstrate the value of providing the problem to the team and allowing them to work out the best solution. This was a big change in a fifty-year-old company that was not used to working in this fashion. Coming up with success metrics was also a major step away from working as a feature factory.</p>
+        <p>Some next steps that could help move our dentists away from the paper evaluations:</p>
+        <ul>
+          <li>Sending nudge emails a few days after a case is delivered.</li>
+          <li>Showing a notification/reminder on the dashboard a few days after a case is delivered.</li>
+          <li>Better explaining the benefits of the evaluation, and that dentists who submit them enjoy higher satisfaction with Glidewell.</li>
+          <li>Quicker ways to submit the evaluation - it’s currently a multiple-choice questionnaire, but asking for a single rating at first and then leading into a follow-up could help.</li>
+        </ul>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="back"><a href="/">Back to home</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
