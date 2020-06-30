@@ -1,21 +1,109 @@
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #151515;
+  color: #2D3748;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 110%;
   margin-top: 0;
 }
 
-.container {
-  margin: 16px 16px;
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 110%;
+  margin: 32px 0 16px;
 }
 
-@media (min-width: 640px) {
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+figure {
+  margin: 2em 0;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+/* .container {
+  margin: 16px 16px;
+} */
+
+/* @media (min-width: 640px) {
   .container {
     margin: 3em 16%;
   }
+} */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 32px;
+  background: #fff;
+  z-index: 1;
+  box-shadow: 0 1px 3px hsla(0,0%,0%,.2);
+}
+
+nav .home {
+  font-weight: 500;
+  margin: 0;
+}
+
+nav .home a {
+  text-decoration: none;
+  color: #2D3748;
+}
+
+.home h1 {
+  margin: 128px 0 64px;
+}
+
+.connect h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.connect ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  .connect ul li {
+    margin-bottom: .5rem;
+  }
+
+body.work {
+  padding-top: 128px;
+}
+
+body.work h1 {
+  margin: 0;
+}
+
+.client {
+  font-size: 24px;
+  font-weight: normal;
+  color: #718096;
+  margin: 0 0 32px;
+}
+
+.role {
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
 }
