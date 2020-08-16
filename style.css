@@ -41,10 +41,13 @@ h2 {
   margin: 32px 0 16px;
 }
 
+a {
+  border-bottom: 1px solid rgba(68,68,68,.2);
+}
+
 a:link {
   text-decoration: none;
   color: #1585D7;
-  border-bottom: 1px solid rgba(68,68,68,.2);
 }
 
 a:hover {
@@ -232,4 +235,45 @@ h2.client {
   display: inline-block;
   margin-bottom: 64px;
   padding: 16px 0 0;
+}
+
+/* Footer */
+
+footer {
+  color: #F9FAFC;
+  padding: 5em 0 5em;
+  background: #2D3748;
+}
+
+footer a {
+  border-bottom: 1px solid#1a7ec5;
+}
+
+footer a:link,
+footer a:visited {
+  color: #F9FAFC;
+}
+
+footer a:hover {
+  color: #1585D7;
+  border: 0;
+}
+
+.home footer .container {
+  margin-top: 0;
+}
+
+footer .blurb {
+  line-height: 125%;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 2em;
 }
