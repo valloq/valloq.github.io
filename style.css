@@ -13,6 +13,24 @@ h1 {
 }
 
 h2 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 110%;
+  color: #718096;
+  margin-top: 0;
+}
+
+  h2.hello {
+    margin-top: 8px;
+  }
+
+    @media (max-width: 640px) {
+      .home h2.hello {
+        margin-top: 1em;
+      }
+    }
+
+.work h2 {
   font-size: 32px;
   font-weight: 500;
   line-height: 110%;
@@ -75,80 +93,83 @@ strong.secondary-color {
   color: #F2723B;
 }
 
+.home .container {
+  margin-top: 6em;
+}
+
+@media (max-width: 640px) {
+  .home .container {
+    margin-top: 0;
+  }
+}
+
 .home h1 {
-  margin: 128px 0 32px;
+  /* margin: 128px 0 32px; */
 }
 
 @media (max-width: 640px) {
   .home h1 {
-    margin: 1em 0 .5em;
+    margin-bottom: .5em;
   }
 }
 
-.connect h3 {
+@media (max-width: 640px) {
+  .home h2 {
+    margin-top: 2em;
+  }
+}
+
+.home .section {
+  margin-bottom: 64px;
+}
+
+.blurb {
   font-size: 24px;
-  font-weight: 500;
-  margin-top: 64px;
-  margin-bottom: 1rem;
+  line-height: 150%;
 }
 
-.connect ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.connect {
+  font-size: 24px;
+  line-height: 150%;
 }
-
-  .connect ul li {
-    margin-bottom: .5rem;
-  }
 
 .home .work {
-  margin: 64px 0 128px;
+  margin: 0 -2%;
 }
 
-.home .work h3 {
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 1rem;
+.work-listing {
+  
 }
 
-.home .work ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #718096;
-}
-
-.home .work ul li {
-  font-size: 24px;
-  line-height: 110%;
-  border-bottom: 1px solid #718096;
-}
-
-.home .work ul li a {
-  text-decoration: none;
-  color: #2D3748;
-  display: inline-block;
-  padding: 32px 0;
-}
-
-  .home .work ul li a:hover {
-    color: #04538D;
+  .work-listing a {
+    display: block;
+    border: 0;
+    margin-bottom: 64px;
   }
 
-.home .work ul li a h4 {
-  font-size: 24px;
-  font-weight: normal;
-  margin: 0 0 8px;
-}
+    .work-listing a:hover h4 {
+      color: #1585D7;
+    }
 
-.home .work ul li a:link h5 {
-  font-weight: normal;
-  font-size: 16px;
-  color: rgb(97, 108, 128);
-  margin: 0;
-}
+    .work-listing a:hover p {
+      color: #2D3748;
+    }
+
+  .work-listing img {
+    width: 100%;
+  }
+
+  .work-listing h4 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 110%;
+    color: #2D3748;
+    margin: 0;
+  }
+
+  .work-listing p {
+    color: #718096;
+  }
 
 body.work {
   padding-top: 128px;
