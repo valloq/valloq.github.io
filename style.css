@@ -59,6 +59,11 @@ p {
   margin-bottom: 1rem;
 }
 
+blockquote {
+  font-size: 1.5em;
+  color: #59616e;
+}
+
 li {
   margin-bottom: .5rem;
 }
@@ -69,6 +74,8 @@ figure {
 
 figcaption {
   font-size: 14px;
+  text-align: center;
+  color: #737a85
 }
 
 nav {
@@ -184,6 +191,7 @@ strong.secondary-color {
   }
 
 body.work {
+  font-size: 18px;
   padding-top: 128px;
 }
 
