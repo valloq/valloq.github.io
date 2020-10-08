@@ -63,15 +63,15 @@
 
       <div class="col-8">
         <h2>Solving the problem</h2>
-        <p>Everything within me screamed, "No! Don't torture me to implement this!" I had never made a website like this before, but I broke down what would need to be done to achieve this effect:</p>
+        <p>Everything within me screamed, "No! Don't torture me to implement this!" Nothing like this had ever been attemped before, but I broke down what would need to be done to achieve this effect:</p>
         <ul>
           <li><strong>Parallaxing</strong>. This was the simplest part because it was so on-trend at the time and a lot of guides and tutorials were available on how to achieve the effect.</li>
           <li><strong>Lazy-loading the content as the user scrolled</strong>. Due to bandwidth limitations and an emphasis on beautiful imagery, I need to find a way to have the content slowly load in as the user scrolled, as opposed to having it all load in the beginning. Getting users right into the experience is better than sitting through a loading screen.</li>
           <li><strong>Infinite scroll</strong>. The concept called for an infinite scroll, where once the user got to the "top", they would automatically be looped back to the bottom, but the transition needed to be seamless to create the illusion of an infinite scroll.</li>
         </ul>
 
-        <p>Implementing a custom scrollbar and hiding the browser's scrollbar ended up being the solution to most of these problems, and also the biggest challenge. I came across another site that had implemented a really nice custom scrollbar, and then reverse-engineered their code to get it to work for this project. I even completely scrapped it at one point because I couldn't understand what my own code was doing anymore.</p>
-        <p>Once I had control of the scrollbar though and how it affected the user's view of the different "panels" that would load as they scrolled up, it became a matter of testing and adjusting until it created the smoothest experience for the user.</p>
+        <p>Implementing a custom scrollbar and hiding the browser's scrollbar ended up being the solution to most of these problems, and also the biggest challenge. I came across another site that had implemented a really nice custom scrollbar, and then reverse-engineered their code to get it to work for this project (and of course, making it function from bottom to top instead of top to bottom like a traditional scrollbar).</p>
+        <p>The code and logic became so entangled at one point that I ended up scrapping it completely and did a major rewrite. Once I had control of the scrollbar though and could control the user's view of the different "panels" as they scrolled up, it became a matter of testing and adjusting until it created the smoothest experience for the user.</p>
       </div>
     </div>
   </div>
