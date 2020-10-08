@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBZGW2F');</script>
+    <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <title>Pacsun: Golden State of Mind | Eric Lim</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="simple-grid.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="work">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBZGW2F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <nav>
+    <p class="home"><a href="/">Eric Lim</a></p>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <h1>Golden State of Mind</h1>
+        <h2 class="client">PacSun</h2>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-4 gray-700">
+        <h3 class="role">Role</h3>
+        <p>Lead Front-End Developer</p>
+
+        <h3 class="role">Team</h3>
+        <p>
+          Creative Direction: <a href="https://cargocollective.com/whiteknee">Jeff Whitney</a><br />
+          Art Direction: <a href="https://kariejamison.myportfolio.com/">Karie Jamison</a><br />
+          Copywriter: <a href="https://joshwritescopy.com/">Josh Eck</a><br />
+          Backend Developer: Sam Fahmie
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8">
+        <h2>Background</h2>
+        <p>PacSun approached Juxt Interactive with a simple request: Create us an award-winning website. They wanted something that would be talked about and bring attention to their new website showing off the California lifestyle.</p>
+        <p>The designers heading up the project knew that meant they had to go big and attempt something that hadn't been seen before. They latched onto the word "mind" in "Golden State of Mind," and thought, <strong>wouldn't it be something if instead of a traditional website where you scroll down to get to the content, you would instead scroll up like you're going into someone's mind?</strong></p>
+      </div>
+
+      <div class="col-12">
+        <figure>
+          <img src="images/gsom/1.png" alt="New navigation" width="100%" />
+          <figcaption>What was presented to visitors when they first arrived on the site. Scrolling upwards would tuck the tray away.</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-8">
+        <h2>Solving the problem</h2>
+        <p>Everything within me screamed, "No! Don't torture me to implement this!" I had never made a website like this before, but I broke down what would need to be done to achieve this effect:</p>
+        <ul>
+          <li><strong>Parallaxing</strong>. This was the simplest part because it was so on-trend at the time and a lot of guides and tutorials were available on how to achieve the effect.</li>
+          <li><strong>Lazy-loading the content as the user scrolled</strong>. Due to bandwidth limitations and an emphasis on beautiful imagery, I need to find a way to have the content slowly load in as the user scrolled, as opposed to having it all load in the beginning. Getting users right into the experience is better than sitting through a loading screen.</li>
+          <li><strong>Infinite scroll</strong>. The concept called for an infinite scroll, where once the user got to the "top", they would automatically be looped back to the bottom, but the transition needed to be seamless to create the illusion of an infinite scroll.</li>
+        </ul>
+
+        <p>Implementing a custom scrollbar and hiding the browser's scrollbar ended up being the solution to most of these problems, and also the biggest challenge. I came across another site that had implemented a really nice custom scrollbar, and then reverse-engineered their code to get it to work for this project. I even completely scrapped it at one point because I couldn't understand what my own code was doing anymore.</p>
+        <p>Once I had control of the scrollbar though and how it affected the user's view of the different "panels" that would load as they scrolled up, it became a matter of testing and adjusting until it created the smoothest experience for the user.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <figure>
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/44308568?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          <figcaption>Video showing off the full website experience.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+
+      <figure>
+        <img src="images/gsom/2.png" alt="New navigation" width="100%" />
+        <figcaption>Scrolling down on the home page would always bring up the tray regardless of where they were in the experience.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/gsom/4.png" alt="New navigation" width="100%" />
+        <figcaption>One of the panels that appeared as you scrolled up.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/gsom/7.png" alt="New navigation" width="100%" />
+        <figcaption>The blog section of the website. This was simple compared to the complexity of the home screen - <a href="https://masonry.desandro.com/">Masonry</a> was used for the layout.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/gsom/9.png" alt="New navigation" width="100%" />
+        <figcaption>A map showing different attractions in California. This was a reskinned Google Maps embed.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+
+        <h3>Outcomes</h3>
+        <p>The site was a massive success when it launched. It collected awards from <a href="https://thefwa.com/cases/pacsun-golden-state-of-mind">FWA</a>, <a href="https://www.commarts.com/webpicks/golden-state-of-mind">Communication Arts Web Pick of the Week</a>, <a href="https://www.awwwards.com/sites/pacsun-golden-state-of-mind-2">Awwwards Honorable Mention</a>, and was featured by <a href="https://www.creativebloq.com/web-design/golden-state-mind-1012970">Creative Bloq</a>.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="back"><a href="/">Back to home</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <p class="blurb">
+            Eric Lim is a User Experience Designer in California, design thinking advocate, and cat wrangler.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <li>
+              <a href="mailto:hello@ericlim.com">Say hello</a>
+            </li>
+            <li>
+              <a href="Resume-eric-lim.pdf">Resume</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/valloq">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://medium.com/@valloq">Medium</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/valloq/">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
