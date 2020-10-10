@@ -21,6 +21,7 @@ h2 {
 }
 
   .home h2 {
+    text-align: right;
     color: #718096;
   }
 
@@ -133,6 +134,7 @@ strong.secondary-color {
 
 @media (max-width: 640px) {
   .home h2 {
+    text-align-last: left;
     margin-top: 2em;
   }
 }
