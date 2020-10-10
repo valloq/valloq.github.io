@@ -46,63 +46,82 @@
     <div class="row">
       <div class="col-8">
         <h2>Background</h2>
-        <p>Toyota was looking for a way to introduce the four Toyota Prius models to auto show attendees. Each model was targeted towards a specific lifestyle.</p>
-        <p>With only three weeks to execute the idea, Juxt Interactive came up with a maze at the Toyota Booth at the 2011 LA Auto Show, that would guide visitors on a branching path as they made a selection at iPads that were placed at every fork, ultimately leading them to the Prius that fit them.</p>
+        <p>Align is the parent company of iTero, who produces an intraoral scanner known as the Element (also the Element 2 and Element 3). As part of an effort to make it easier for dentists to send cases to Glidewell, Align was open to integrating with Glidewell on the iTero software.</p>
+
+        <h2>The Challenge</h2>
+        <p>The Element is two parts: A handheld scanner for scanning a patient's mouth, and a touchscreen device on wheels about chest height to allow the dentist to see what is being scanned, and to input data.</p>
+        <p>One of the first challenges was to enable customers to sign into the integration with Glidewell Dental, but also providing Glidewell with the information stored on the iTero device. We needed to be transparent in this process in order to be open and honest with our customers.</p>
+        <p>What we initially thought was going to be a simple matter turned into many discussions with the technical team to understand limitations, and further discussions with product managers to grasp what data would be needed from the customer and their device to be able to submit a compelte order</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <img src="images/align-itero/user-flow.png" alt="User flow chart for signing in on the iTero device" width="100%">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <p>The proposed solution would be similar to how websites now offer ways to sign in using OAuth, like Google and Facebook offer. Not to actually impelement OAuth, but display the message in a similar way so that users knew upfront what information would be shared.</p>
+
+        <h2>Research</h2>
+        <p>Research was done on the iTero Element devices available on campus. One was in use in our on-site operatory by the dental staff, so we visited the dental assistant there to understand how she uses it and her challenges with the device.</p>
+        <p>Something interested we noted at the time was that she had manicured nails, and didn't use her fingertips on the touchscreen but her finger pads - possibly meaning she would have issues with smaller touch targets.</p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-12">
+      <div class="col-6">
         <figure>
-          <img src="images/toyota-maze/1.jpg" alt="Trying out the maze" width="100%" />
-          <figcaption>Our copywriter Josh trying out the Maze at the LA Auto Show.</figcaption>
+          <img src="images/align-itero/research-1.jpg" alt="" width="100%">
+        </figure>
+      </div>
+      <div class="col-6">
+        <figure>
+          <img src="images/align-itero/research-2.jpg" alt="" width="100%">
+          <figcaption>Looking at the onscreen keyboard and paying attention to how it shifts the screen when it appears.</figcaption>
         </figure>
       </div>
     </div>
     
     <div class="row">
       <div class="col-8">
-        <h2>The Challenge</h2>
-        <p>Because of the short timeline, we did not have the luxury of building out a native app for the iPad. Instead they looked to me to create an HTML5 app (relying heavily on Javascript and CSS animations) that would feel native, and be able to have it ready in time for the LA Auto Show.</p>
-        <p>My main goal on the project was to ensure that all of the interactions felt responsive and snappy. I had worked on another project for Honda that also involved iPads, but its emphasis was more on the content and less on fun, engaging animations. Animations was something that was still a bit new to me at the time, and back in 2011 it was an even bigger challenge on the processors that came in the iPads (Looking it up, this was most likely an A5 1GHz processor).</p>
-      </div>
-
-      <div class="col-8">
-        <h2>Solving the problem</h2>
-        <p>Presented with a short deadline, I worked as fast as I could to familiarize myself with HTML5 tricks and tips for a tablet/mobile platform, and was so excited when I learned about the <a href="https://www.smashingmagazine.com/2012/06/play-with-hardware-accelerated-css/">translate3d</a> trick to get smooth animations. Creating Javascript apps wasn't my strong suit, and I might have had to work through the weekend to pull it off, but I was proud of what I was able to pull off and be able to contribute to an experience that brought smiles to the faces of participants.</p>
+        <h2>Low-Fidelity Wireframes</h2>
+        <p>Getting the main elements that existed in the current interface, and then adding in the screens and elements that would be necessary for a user to submit a case to Glidewell.</p>
       </div>
     </div>
+  </div>
 
     <div class="row">
-      <div class="col-12">
+      <div class="col-4">
         <figure>
-          <img src="images/toyota-maze/2.jpg" alt="touch to start" width="100%" />
-          <figcaption>The third station. Depending on your choice here, it would either direct you down to station 4 on the left, or station 5 on the right.</figcaption>
+          <img src="images/align-itero/wire-1.png" alt="" width="100%">
         </figure>
-  
+      </div>
+      <div class="col-4">
         <figure>
-          <img src="images/toyota-maze/3.jpg" alt="choose one" width="100%" />
-          <figcaption>Prompting the users.</figcaption>
+          <img src="images/align-itero/wire-2.png" alt="" width="100%">
         </figure>
-  
+      </div>
+      <div class="col-4">
         <figure>
-          <img src="images/toyota-maze/4.jpg" alt="fish or tree?" width="100%" />
-          <figcaption>Which one are you? After making your choice, they would animate upwards like the string was tugging on them.</figcaption>
-        </figure>
-  
-        <figure>
-          <img src="images/toyota-maze/5.jpg" alt="25% people selected fish." width="100%" />
-          <figcaption>The data was collected on the front-end and the percentage would update as attendees went through the maze throughout the day.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/toyota-maze/6.jpg" alt="Prius V is for you" width="100%" />
+          <img src="images/align-itero/wire-3.png" alt="" width="100%">
         </figure>
       </div>
     </div>
   </div>
 
   <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <h2>Wrapping Up</h2>
+        <p>From this point the work was handed over to another designer to complete the visual design and make a more functional prototype. Unfortunately due to Covid-19, this project was put on hold for the time being.</p>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-12">
         <p class="back"><a href="/">Back to home</a></p>
