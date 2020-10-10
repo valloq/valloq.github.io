@@ -9,7 +9,7 @@
     })(window,document,'script','dataLayer','GTM-MBZGW2F');</script>
     <!-- End Google Tag Manager -->
   <meta charset="utf-8">
-  <title>Mobile App Concept | Eric Lim</title>
+  <title>Instructions for Use | Eric Lim</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -28,7 +28,7 @@
   <div class="container">
     <div class="row">
       <div class="col-7">
-        <h1>Mobile App Concept</h1>
+        <h1>Instructions for Use</h1>
         <h2 class="client">Glidewell Dental</h2>
       </div>
       <div class="col-1"></div>
@@ -38,7 +38,7 @@
 
         <h3 class="role">Team</h3>
         <p>
-          Product Owner, Software Engineer
+          Complaince Engineers, Product Owner, Software Engineer
         </p>
       </div>
     </div>
@@ -46,57 +46,48 @@
     <div class="row">
       <div class="col-8">
         <h2>Background</h2>
-        <p>Toyota was looking for a way to introduce the four Toyota Prius models to auto show attendees. Each model was targeted towards a specific lifestyle.</p>
-        <p>With only three weeks to execute the idea, Juxt Interactive came up with a maze at the Toyota Booth at the 2011 LA Auto Show, that would guide visitors on a branching path as they made a selection at iPads that were placed at every fork, ultimately leading them to the Prius that fit them.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <figure>
-          <img src="images/toyota-maze/1.jpg" alt="Trying out the maze" width="100%" />
-          <figcaption>Our copywriter Josh trying out the Maze at the LA Auto Show.</figcaption>
-        </figure>
+        <p>Instructions for use (IFU) are required by the FDA for medical devices, and thus required for some of the products that Glidewell produces.</p>
+        <p>IFUs are printed on paper and mailed out with the product. Most likely, they are being thrown away as soon as the recipient receives the product. The process of creating, printing, and packaging the IFUs is cumbersome and expensive and is estimated to cost the company $273,000 a year.</p>
+        <p>In an effort to reduce costs and labor, a proposal came to the engineering and design group to find a way to offer them digitally to our customers. The FDA had no strict guidelines on digital IFUs at the time, so we looked to the EU guidelines for reference.</p>
       </div>
     </div>
     
     <div class="row">
       <div class="col-8">
-        <h2>The Challenge</h2>
-        <p>Because of the short timeline, we did not have the luxury of building out a native app for the iPad. Instead they looked to me to create an HTML5 app (relying heavily on Javascript and CSS animations) that would feel native, and be able to have it ready in time for the LA Auto Show.</p>
-        <p>My main goal on the project was to ensure that all of the interactions felt responsive and snappy. I had worked on another project for Honda that also involved iPads, but its emphasis was more on the content and less on fun, engaging animations. Animations was something that was still a bit new to me at the time, and back in 2011 it was an even bigger challenge on the processors that came in the iPads (Looking it up, this was most likely an A5 1GHz processor).</p>
+        <h2>The Requirements</h2>
+        <p>Because the compliance and regulatory affairs group also agreed that this was almost a "userless" project (they didn't think anyone actually read the IFUs or kept them with the product), the majority of the requirements for the project were to adhere to the EU guidelines.</p>
+
+        <ul>
+          <li>IFUs need to be in an easily accessible format - preferably PDF</li>
+          <li>IFUs need to be available in 23 different languages.</li>
+          <li>All revisions of the IFU need to be available, with the date of the revision noted.</li>
+          <li>Users need a way to request a printed version of the IFU.</li>
+          <li>Users need a way to contact the company or ask questions if they are having issues.</li>
+        </ul>
       </div>
 
       <div class="col-8">
         <h2>Solving the problem</h2>
-        <p>Presented with a short deadline, I worked as fast as I could to familiarize myself with HTML5 tricks and tips for a tablet/mobile platform, and was so excited when I learned about the <a href="https://www.smashingmagazine.com/2012/06/play-with-hardware-accelerated-css/">translate3d</a> trick to get smooth animations. Creating Javascript apps wasn't my strong suit, and I might have had to work through the weekend to pull it off, but I was proud of what I was able to pull off and be able to contribute to an experience that brought smiles to the faces of participants.</p>
+        <p>The key piece provided by regulatory affairs was to include a scannable QR code on the product label. The thought was that if any of the customers had questions about the product, they could scan it with their phone and find the IFU.</p>
       </div>
     </div>
+  </div>
 
+  <div class="row">
+    <div class="col-12">
+      <figure>
+        <img src="images/ifu/scan.png" alt="QR Scanning process" width="100%" />
+        <figcaption>Showing the user flow as they scan the QR code and are then taking to the corresponding product on the website.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-8">
         <figure>
-          <img src="images/toyota-maze/2.jpg" alt="touch to start" width="100%" />
-          <figcaption>The third station. Depending on your choice here, it would either direct you down to station 4 on the left, or station 5 on the right.</figcaption>
-        </figure>
-  
-        <figure>
-          <img src="images/toyota-maze/3.jpg" alt="choose one" width="100%" />
-          <figcaption>Prompting the users.</figcaption>
-        </figure>
-  
-        <figure>
-          <img src="images/toyota-maze/4.jpg" alt="fish or tree?" width="100%" />
-          <figcaption>Which one are you? After making your choice, they would animate upwards like the string was tugging on them.</figcaption>
-        </figure>
-  
-        <figure>
-          <img src="images/toyota-maze/5.jpg" alt="25% people selected fish." width="100%" />
-          <figcaption>The data was collected on the front-end and the percentage would update as attendees went through the maze throughout the day.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/toyota-maze/6.jpg" alt="Prius V is for you" width="100%" />
+          <video src="images/ifu/walkthrough.mp4" type="video/mp4" autoplay muted loop controls width="100%"></video>
+          <figcaption>Walkthrough of the mobile website.</figcaption>
         </figure>
       </div>
     </div>
