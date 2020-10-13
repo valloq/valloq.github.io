@@ -132,9 +132,14 @@ strong.secondary-color {
   }
 }
 
+@media (max-width: 720px) {
+  .home h2 {
+    text-align: left;
+  }
+}
+
 @media (max-width: 640px) {
   .home h2 {
-    text-align-last: left;
     margin-top: 2em;
   }
 }
